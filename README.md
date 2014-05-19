@@ -3,12 +3,12 @@ DoIt
 
 A stupid simple CLI task manager, in Python!
 
-Wut?
+Huh?
 ----
 
 DoIt lets you store your tasks in a handy CLI.
 
-For example: ::
+For example:
 
     $ doit "Fix grandma's internet"
     Got it! You need to fix grandma's internet.
