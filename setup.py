@@ -12,7 +12,7 @@ with open('LICENSE') as f:
 
 
 setup(
-    name='doit',
+    name='doit-tasks',
     version=doit.__version__,
     description="Tasks on the command line",
     long_description=readme,
