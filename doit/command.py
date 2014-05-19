@@ -34,14 +34,16 @@ class Command(object):
         with indent(INDENT):
             if len(pending_tasks) > 0:
                 puts('Here\'s what you still need to do:')
-            with indent(INDENT):
-                for task in pending_tasks:
-                    puts('({}): {}'.format(task[0], task[1].get('text')))
+                with indent(INDENT):
+                    for task in pending_tasks:
+                        puts('({}): {}'.format(task[0], task[1].get('text')))
+                if len(done_tasks) > 0:
+                    puts('\n\n')
             if len(done_tasks) > 0:
-                puts ('\n\nHere\'s what you\'ve accomplished so far.:')
-            with indent(INDENT):
-                for task in done_tasks:
-                    puts('({}): {}'.format(task[0], task[1].get('text')))
+                puts ('Here\'s what you\'ve accomplished so far:')
+                with indent(INDENT):
+                    for task in done_tasks:
+                        puts('({}): {}'.format(task[0], task[1].get('text')))
 
     def add(self, major, minor):
         new_task_index = self.storage.add_task(major)
