@@ -7,7 +7,7 @@ import doit
 with open('README.md') as f:
     readme = f.read()
 
-with open('LICENSE.md') as f:
+with open('LICENSE') as f:
     license = f.read()
 
 
