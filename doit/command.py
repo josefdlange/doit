@@ -62,7 +62,7 @@ class Command(object):
         if response.lower().startswith('y'):
             self.storage.delete_task(int(task_number))
             with indent(INDENT):
-                puts('Alright, looks like you won\'t {}"'.format(task.get('text')[0].lower(), task.get('text')[1:]))
+                puts('Alright, looks like you won\'t {}{}"'.format(task.get('text')[0].lower(), task.get('text')[1:]))
 
     def flush(self):
         self.storage.delete_done_tasks()
