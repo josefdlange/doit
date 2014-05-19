@@ -4,10 +4,10 @@ from setuptools import setup, find_packages
 import doit
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
-with open('LICENSE.rst') as f:
+with open('LICENSE.md') as f:
     license = f.read()
 
 
