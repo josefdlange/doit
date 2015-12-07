@@ -17,6 +17,19 @@ For example:
     Here's what you still need to do:
     (0): Fix grandma's internet
 
+Why?
+----
+
+Best answer I've got is why not?
+
+
+How?
+----
+
+DoIt is listed on PyPI as `doit-tasks` and can be installed like so:
+
+    $ pip install doit-tasks
+
 Credit
 ----
 This tool was inspired by:
